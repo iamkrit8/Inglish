@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_blurred" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="262dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="196dp"
+        android:fontFamily="sans-serif-black"
+        android:text="*Please Login to continue*"
+        android:textAlignment="center"
+        android:textColor="#CDC3C3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="272dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="*By clicking, you are agreeing to our Terms and Conditions*"
+        android:textAlignment="center"
+        android:textColor="#CDC3C3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="208dp"
+        android:layout_height="78dp"
+        android:fontFamily="cursive"
+        android:text="Inglish"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <LinearLayout
+        android:id="@+id/loginBtn"
+        android:layout_width="254dp"
+        android:layout_height="46dp"
+        android:background="@drawable/white_rounded_bg"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.241">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="8dp"
+            android:layout_height="22dp"
+            android:layout_weight="1"
+            android:paddingBottom="2dp"
+            app:srcCompat="@drawable/google" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:paddingBottom="8dp"
+            android:text="Sign in with Google"
+            android:textColor="#100F0F" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
